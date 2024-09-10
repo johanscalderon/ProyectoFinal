@@ -82,23 +82,49 @@
 
 .nav ul li {
     margin: 0 15px;
+    position: relative; /* Necesario para el subrayado */
 }
 
+/* Estilos del enlace */
 .nav ul li a {
     color: #ecf0f1;
     text-decoration: none;
     font-size: 18px;
     padding: 10px;
-    border-radius: 25px;
-    transition: background-color 0.3s, color 0.3s;
+    position: relative; /* Necesario para el subrayado */
+    transition: color 0.3s;
 }
 
-.nav ul li a:hover {
+/* Pseudoelemento para el subrayado */
+.nav ul li a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
     background-color: #0099ff;
-    color: #2c3e50;
-    font-weight: bold;
-    box-shadow: 0 4px 10px rgba(0, 153, 255, 0.3); /* Añade un efecto de sombra al hover */
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
 }
+
+/* Mostrar subrayado en hover */
+.nav ul li a:hover::before {
+    visibility: visible;
+    width: 100%;
+}
+
+/* Cambiar el color al hacer hover */
+.nav ul li a:hover {
+    color: #0099ff;
+}
+
+/* Subrayado permanente en el elemento activo */
+.nav ul li a.active::before {
+    visibility: visible;
+    width: 100%;
+}
+
 
 
 /* Galería */
