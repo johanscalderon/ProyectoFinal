@@ -8,7 +8,7 @@
 /*INICIO SLIDER*/
 
 .slider {
-    width: 80%;
+    width: 100%;
     margin: auto;
     overflow: hidden; /* Oculta las imágenes fuera del slider */
     position: relative;
