@@ -2,20 +2,73 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+
 
 body {
     background-color: #f0f0f0;
     color: #333;
 }
 
-header {
-    background-color: #1a1a1a;
-    color: #fff;
+/* Estilos para el header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border-bottom: 2px solid #34495e;
+}
+
+/* Estilo para el logo y el texto "MOTORSHELL" */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px; /* Ajusta según el tamaño de tu logo */
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #ecf0f1;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Estilos para el menú de navegación */
+.nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav ul li a:hover {
+    background-color: #0099ff;
+    color: #2c3e50;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 153, 255, 0.3); /* Añade un efecto de sombra al hover */
 }
 
 h1 {
@@ -75,4 +128,77 @@ h1 {
     h1 {
         font-size: 28px;
     }
+}
+
+/*Estilos FOOTER*/
+.footer {
+    background-color: #000000;
+    color: #ecf0f1;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-section h2, .footer-section h3 {
+    margin-bottom: 20px;
+    color: #ecf0f1;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #0099ff;
+}
+
+.social-links a {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 30px;
+    height: auto;
+    filter: invert(100%);
+    transition: filter 0.3s;
+}
+
+.social-links img:hover {
+    filter: invert(70%);
+}
+
+.footer p {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #bdc3c7;
+    text-align: center;
 }

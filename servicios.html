@@ -4,17 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios para Motos</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styleServicio.css">
 </head>
 <body>
 
-    <header>
-        <h1>Servicios Innovadores para tu Moto</h1>
+    <header class="header">
+        <div class="logo">
+            <img src="img/casco.png" alt="Logo">
+            <h1>MOTORSHELL</h1>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/servicios.html">Servicios</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main class="grid-container">
         <div class="service-card">
-            <img src="mantenimiento.jpg" alt="Mantenimiento General">
+            <img src="/img/mantenimiento.jpg" alt="Mantenimiento General">
             <div class="service-content">
                 <h2>Mantenimiento General</h2>
                 <p>Revisión completa para garantizar el correcto funcionamiento de tu moto.</p>
@@ -53,6 +64,33 @@
             </div>
         </div>
     </main>
-
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Galería de Motos</h2>
+                <p>Tu tienda online de motocicletas de las mejores marcas. Encuentra tu estilo y velocidad con nosotros.</p>
+                <p>&copy; 2024 Galería de Motos. Todos los derechos reservados.</p>
+            </div>
+    
+            <div class="footer-section links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Soporte</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section social">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
