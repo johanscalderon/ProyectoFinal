@@ -13,10 +13,9 @@
     justify-content: center;
     font-family: 'Poppins', sans-serif; /* Fuente más moderna */
     font-size: 36px; /* Tamaño de fuente mayor para destacar más */
-    font-weight: 600; /* Aumenta el peso de la fuente para un estilo más robusto */
     color: #333; /* Color más elegante */
     letter-spacing: 1px; /* Espaciado entre letras para mayor claridad */
-    text-transform: uppercase; /* Para darle un toque más moderno */
+    text-transform: uppercase; /* Para darle un toque más moderno MAYUSCULAS */
     background: linear-gradient(to right, #0066ff, #023871); /* Gradiente sutil */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; /* Efecto de texto con gradiente */
